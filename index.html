@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>My Family</title>
+        <script src=main.js></script>
+    </head>
+    <body align='center'>
+        <h1>My Family Book</h1>
+        <img src='https://us.123rf.com/450wm/mustique/mustique1505/mustique150500020/40657581-stock-vector-cartoon-illustration-of-a-family-portrait-of-parents-and-their-little-children.jpg?ver=6' 
+        style="width:30%;" id='welcome_image'>
+        <h4 id='f_m_n'></h4>
+        <button onclick="update()" type='button'>Next</button>
+    </body>
+    <script>
+        image_array=["https://t4.ftcdn.net/jpg/02/45/26/41/360_F_245264137_3qCXXPpr5RVm93gQecjCRL7OOAU5ELF8.jpg",
+        "https://media.istockphoto.com/photos/smiling-businesswoman-looking-at-camera-webcam-make-conference-call-picture-id1129638608?k=6&m=1129638608&s=612x612&w=0&h=8OhKQCq_elLsW_PAWA4n8pzQy3mlkf5a_ztp2Nbv8Y8=",
+    "https://us.123rf.com/450wm/stockbroker/stockbroker1702/stockbroker170201631/71273314-outdoor-head-and-shoulders-portrait-of-smiling-mature-man.jpg?ver=6",
+"https://dodoburd.com/wp-content/uploads/2020/10/Two-Cool-Shirt.jpg",
+"https://media.istockphoto.com/photos/happy-senior-woman-picture-id1029340496?k=6&m=1029340496&s=612x612&w=0&h=4ScjIFlsN8uVI2xxijOegNZaiYn4_toD0AGciS4bejc=",
+"https://media.istockphoto.com/photos/senior-man-smiling-at-home-picture-id1029340518?k=6&m=1029340518&s=612x612&w=0&h=3uYrkYLKhZUVKJvWwopr_y2k4Czf10MwabWm6QpEpYA="]
+name_array=["Arhita Jain","Neeti Jain","Amit jain","Anantveer Jain","Santosh Jain","Subhash Jain"]
+var i=0;
+
+function update(){
+    i++;
+    var number_family=5;
+    if (i > number_family){
+        i=0;
+    }
+    var update_image=image_array[i];
+    var update_name=name_array[i];
+
+    document.getElementById("welcome_image").src=update_image;
+    document.getElementById("f_m_n").innerHTML=update_name;
+}
+    </script>
+</html>
